@@ -1,0 +1,130 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0e8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 35px;
+    padding: 30px;
+}
+
+.card {
+    width: 10rem;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(160, 72, 160);
+}
+
+/* Individual category colors */
+.personal-computers {
+    background-color: rgb(7, 11, 70);
+}
+
+.smart-phones {
+    background-color: rgb(7, 11, 70);
+}
+
+.hardware-accessories {
+    background-color: rgb(7, 11, 70);
+}
+
+.application-software {
+    background-color: rgb(7, 11, 70);
+}
+
+.system-software {
+    background-color: rgb(7, 11, 70);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 1.5;
+    
+}
+
+.cart-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Changed from 'right' to 'left' */
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+    
+}
+
+.cart-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.cart-button .icon {
+    font-size: 35px;
+}
+
+.mainpage-button {
+    position: fixed;
+    bottom: 122px; 
+    left: 20px;
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.mainpage-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.mainpage-button .icon {
+    font-size: 35px;
+}
+
