@@ -1,0 +1,118 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+.checkout-container {
+    width: 90%;
+    max-width: 800px; 
+    margin: 30px auto; 
+    background: #d9eefa; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+.checkout-container h1 {
+    text-align: center; 
+    color: rgb(7, 11, 70); 
+    margin-bottom: 20px;
+}
+
+.billing-info, .payment-info, .order-summary {
+    margin-bottom: 20px; 
+}
+
+.billing-info h2, .payment-info h2, .order-summary h2 {
+    color: #333; 
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #555; 
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.order-summary p {
+    margin: 10px 0; 
+    font-size: 18px;
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+}
+
+.continue-shopping, .checkout {
+    padding: 15px 30px; 
+    text-decoration: none; 
+    color: #fff; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+}
+
+.continue-shopping {
+    background-color: rgb(7, 11, 70); 
+}
+
+.checkout {
+    background-color: rgb(7, 11, 70); 
+}
+
+.continue-shopping:hover, .checkout:hover {
+    background-color: rgb(160, 72, 160); 
+}
+
+@media (max-width: 600px) {
+    .checkout-container {
+        width: 95%; 
+    }
+
+    .checkout-actions {
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: stretch;
+    }
+}
+.mainpage-button {
+    position: fixed;
+    bottom: 122px; 
+    left: 20px;
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.mainpage-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.mainpage-button .icon {
+    font-size: 35px;
+}
