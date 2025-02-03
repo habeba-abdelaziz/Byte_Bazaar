@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Accessories</title>
+    <link rel="stylesheet" href="Smart_Phones.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <h1>Hardware Accessories</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="price">$399</span>
+            <div class="img">
+                <img src="./img/wirless gaming mouse.png" alt="Gaming Wireless Mouse">
+            </div>
+            <div class="description">
+                <h2>Gaming Wireless Mouse</h2>
+                <p>ZERO SMOOTHING, ACCELERATION, FILTERING BATTERY LIFE 250 hours</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Gaming Wireless Mouse', 399, './img/wirless gaming mouse.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$599</span>
+            <div class="img">
+                <img src="./img/headset.png" alt="Gaming Headset">
+            </div>
+            <div class="description">
+                <h2>Gaming Headset</h2>
+                <p>Works with PC, PS4/3 & Xbox One/Series X, NSConnect USB or AUX Surround Sound 7.1</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Gaming Headset', 599, './img/headset.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$999</span>
+            <div class="img">
+                <img src="./img/heayboard.png" alt="Wireless Keyboard">
+            </div>
+            <div class="description">
+                <h2>Wireless Keyboard</h2>
+                <p>Arabic And English Keys, Solid Aircraft-grade Aluminum ABS construction <br> + Free mouse </p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Wireless Keyboard', 999, './img/heayboard.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$259</span>
+            <div class="img">
+                <img src="./img/Usb c hub.png" alt="USB C Hub">
+            </div>
+            <div class="description">
+                <h2>USB C Hub</h2>
+                <p>USB-C PD Power 100W, USB 3.0 3 Ports 5Gbps, HDMI 3840*2160@30Hz</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('USB C Hub', 259, './img/Usb c hub.png')">+ add to Cart</button>
+        </div>
+
+        <div class="link-buttons">
+            <a href="products.html" class="button">Back to product page</a>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    <a href="shopping_cart.html" class="cart-button">
+        <span class="icon">🛒</span>
+    </a>
+</body>
+</html>

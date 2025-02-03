@@ -1,0 +1,383 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 150px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    background: #f8f9fc;
+    border-right: 1px solid #e0e0e0;
+}
+
+.product-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.size-selection button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size-selection button:hover {
+    background-color: #ddd;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-to-bag {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.add-to-bag:hover {
+    background-color: #555;
+}
+
+.shopping-basket {
+    flex: 2;
+    padding: 20px;
+    background: #e7f1fc;
+}
+
+.shopping-basket h1 {
+    margin-bottom: 20px;
+    color: rgb(7, 11, 70);
+}
+
+.basket-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#basket-items {
+    list-style: none;
+    padding: 0;
+}
+
+.basket-summary {
+    margin-top: 20px;
+}
+
+.basket-summary p {
+    margin: 10px 0;
+}
+.basket-actions a {
+    display: inline-block; 
+    padding: 15px 30px; 
+    margin-left: 10px; 
+    text-align: center; 
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+.continue-shopping {
+    background-color: rgb(7, 11, 70);
+    color: #fff;
+}
+
+.continue-shopping:hover {
+    background-color: rgb(160,72,160);
+}
+
+.checkout {
+    background-color: rgb(7, 11, 70);
+    color: #fff;
+}
+
+.checkout:hover {
+    background-color: rgb(160,72,160);
+}
+.mainpage-button {
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #d9eefa;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9eefa;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.mainpage-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.mainpage-button .icon {
+    font-size: 35px;
+}
+@media only screen and (max-width: 768px) {
+    /* ضبط اللوجو ليكون أصغر ومتجاوب */
+    .logo-container {
+        position: absolute;
+        top: 5px; 
+        right: 5px;
+    }
+
+    .logo-container img {
+        width: 100px; 
+        height: auto;
+    }
+
+    /* تحسين ترتيب الصفحة */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* تكوين سلة المشتريات بطريقة مناسبة */
+    .cart-container {
+        display: flex;
+        flex-direction: column; /* ترتيب عمودي للعناصر */
+        width: 95%;
+        margin: 100px auto 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .product-details {
+        padding: 15px;
+        background: #f8f9fc;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .product-details h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .product-details p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .size-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .size-selection button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        border: 1px solid #333;
+        background-color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .size-selection button:hover {
+        background-color: #ddd;
+    }
+
+    .price {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* زر الإضافة إلى السلة */
+    .add-to-bag {
+        width: 100%;
+        padding: 12px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .add-to-bag:hover {
+        background-color: #555;
+    }
+
+    /* سلة التسوق */
+    .shopping-basket {
+        padding: 15px;
+        background: #e7f1fc;
+        text-align: center;
+    }
+
+    .shopping-basket h1 {
+        font-size: 1.4em;
+        color: rgb(7, 11, 70);
+        margin-bottom: 15px;
+    }
+
+    .basket-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px 0;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 15px;
+        font-size: 0.9em;
+    }
+
+    #basket-items {
+        list-style: none;
+        padding: 0;
+    }
+
+    .basket-summary {
+        margin-top: 15px;
+    }
+
+    .basket-summary p {
+        margin: 8px 0;
+    }
+
+    /* أزرار التحكم في السلة */
+    .basket-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .basket-actions a {
+        display: block;
+        width: 80%;
+        padding: 12px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .continue-shopping {
+        background-color: rgb(7, 11, 70);
+        color: #fff;
+    }
+
+    .continue-shopping:hover {
+        background-color: rgb(160,72,160);
+    }
+
+    .checkout {
+        background-color: rgb(7, 11, 70);
+        color: #fff;
+    }
+
+    .checkout:hover {
+        background-color: rgb(160,72,160);
+    }
+
+    /* زر الصفحة الرئيسية */
+    .mainpage-button {
+        position: fixed; 
+        top: 15px; 
+        left: 15px; 
+        background-color: rgb(7, 11, 70);
+        padding: 12px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px #d9eefa;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d9eefa;
+        font-size: 25px;
+        transition: background-color 0.3s;
+    }
+
+    .mainpage-button:hover {
+        background-color: rgb(160, 72, 160);
+    }
+
+    /* زر الروابط في أسفل الصفحة */
+    .link-buttons {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .link-buttons button {
+        padding: 12px 20px;
+        font-size: 1em;
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    /* ضبط المساحة السفلية لتجنب تداخل الزر مع المحتوى */
+    body {
+        padding-bottom: 80px;
+    }
+}

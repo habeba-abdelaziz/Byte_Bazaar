@@ -1,0 +1,163 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+.checkout-container {
+    width: 90%;
+    max-width: 800px; 
+    margin: 30px auto; 
+    background: #d9eefa; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+.checkout-container h1 {
+    text-align: center; 
+    color: rgb(7, 11, 70); 
+    margin-bottom: 20px;
+}
+
+.billing-info, .payment-info, .order-summary {
+    margin-bottom: 20px; 
+}
+
+.billing-info h2, .payment-info h2, .order-summary h2 {
+    color: #333; 
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #555; 
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.order-summary p {
+    margin: 10px 0; 
+    font-size: 18px;
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+}
+
+.continue-shopping, .checkout {
+    padding: 15px 30px; 
+    text-decoration: none; 
+    color: #fff; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+}
+
+.continue-shopping {
+    background-color: rgb(7, 11, 70); 
+}
+
+.checkout {
+    background-color: rgb(7, 11, 70); 
+}
+
+.continue-shopping:hover, .checkout:hover {
+    background-color: rgb(160, 72, 160); 
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-container img { 
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 90px;
+        height: auto;
+    }
+    /* جعل كل المحتوى داخل إطار الموبايل */
+    @media only screen and (max-width: 768px) {
+        /* جعل المحتوى داخل إطار الموبايل */
+        .checkout-container {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 15px;
+            background: #d9eefa;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* توحيد حجم الأزرار وتصميمها */
+        .checkout-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    
+        .continue-shopping,
+        .checkout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 200px; /* ضبط عرض موحد */
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            background-color: rgb(7, 11, 70);
+            color: white;
+            border: none;
+            height: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        /* توحيد مظهر زر <a> مع زر <button> */
+        .continue-shopping {
+            display: inline-flex;
+        }
+    
+        .checkout {
+            display: inline-flex;
+        }
+    
+        /* تأثير Hover */
+        .continue-shopping:hover,
+        .checkout:hover {
+            background-color: rgb(160, 72, 160);
+        }
+    
+        /* تحسين مظهر النصوص */
+        .checkout-container h1 {
+            text-align: center;
+            color: rgb(7, 11, 70);
+            margin-bottom: 15px;
+        }
+    
+        .order-summary p {
+            font-size: 1em;
+            margin: 8px 0;
+        }
+    }
+    
+}
+

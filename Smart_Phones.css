@@ -1,0 +1,274 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9eefa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-style:inherit;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 200px;
+    row-gap: 75px;
+    justify-content: center;
+    margin-right: 10rem;
+}
+
+.grid-item {
+    width: 350px;
+    padding: 20px;
+    background-color: #0c1344;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orangered; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grid-item img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.grid-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.grid-item p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0;
+    flex-grow: 1;
+}
+.img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.link-buttons {
+    position: fixed;
+    bottom: 20px; 
+    right: 5px;  
+    z-index: 1000; 
+}
+
+.link-buttons .button {
+    padding: 10px 20px;
+    background-color: rgb(7, 11, 70); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-buttons .button:hover {
+    background-color: rgb(160, 72, 160); 
+    transform: scale(1.1); 
+}
+.cart-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #1e4663;
+}
+
+.cart-button .icon {
+    font-size: 35px;
+}
+.mainpage-button {
+    position: fixed;
+    bottom: 122px; 
+    left: 20px;
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.mainpage-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.mainpage-button .icon {
+    font-size: 35px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh; 
+        position: relative;
+    }
+
+    .logo-container img { 
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 90px;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2em; 
+        margin-top: 80px; 
+        margin-bottom: 0;
+        text-align: center; 
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        justify-content: center;
+        margin-top: 10px; 
+        margin-right: 6px;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        gap: 15px; 
+    }
+
+    .grid-item {
+        width: 100%; 
+        max-width: 160px; 
+        padding: 10px;
+        background-color: #0c1344;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .price {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: orangered;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .grid-item img {
+        width: 150px; 
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .grid-item h2 {
+        font-size: 1.1em; 
+        margin: 10px 0;
+    }
+
+    .grid-item p {
+        font-size: 0.8em; 
+        line-height: 1.4;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .cart-button {
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+
+}
+    .mainpage-button {
+        position: absolute;
+        top: 25px;
+        left: 90px;
+        width: 40px;
+        height: 40px;
+
+}
+.link-buttons {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    width: 100%;
+}
+
+.link-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px; 
+}
+body {
+    padding-bottom: 60px;
+}
+}

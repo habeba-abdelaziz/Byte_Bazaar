@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Computers</title>
+    <link rel="stylesheet" href="Personal_computer.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <h1>Personal Computers</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="price">$1999</span>
+            <div class="img">
+                <img src="./img/thinkpad.png" alt="ThinkPad">
+            </div>
+            <div class="description">
+                <h2>Lenovo ThinkPad</h2>
+                <p>Trustworthy quality & enhanced security features for business.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Lenovo ThinkPad', 1999, './img/thinkpad.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$1299</span>
+            <div class="img">
+                <img src="./img/yoga.png" alt="Yoga">
+            </div>
+            <div class="description">
+                <h2>Lenovo Yoga</h2>
+                <p>From laptop to tent mode, to stand mode or tablet mode. Quickly adapts to how you work, play, and relax.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Lenovo Yoga', 1299, './img/yoga.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$1199</span>
+            <div class="img">
+                <img src="./img/yoga2.png" alt="IdeaCentre">
+            </div>
+            <div class="description">
+                <h2>Lenovo Yoga | IdeaCentre</h2>
+                <p>Wide range of responsive, stylish devices with reliable performance and impressive style.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Lenovo Yoga | IdeaCentre', 1199, './img/yoga2.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$2299</span>
+            <div class="img">
+                <img src="./img/gaming pc.png" alt="LOQ">
+            </div>
+            <div class="description">
+                <h2>Lenovo LOQ</h2>
+                <p>Expectation-shattering gaming desktops coming in at a budget price point.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Lenovo LOQ', 2299, './img/gaming pc.png')">+ add to Cart</button>
+        </div>
+
+        <div class="link-buttons">
+            <a href="products.html" class="button">Back to product page</a>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    <a href="shopping_cart.html" class="cart-button">
+        <span class="icon">🛒</span>
+    </a>
+</body>
+</html>

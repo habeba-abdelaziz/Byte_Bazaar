@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css"> 
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+            <p><strong>Shipping:</strong> $10.00</p>
+            <p><strong>Total:</strong> $<span id="total">10.00</span></p>
+        </div>
+
+        <div class="billing-info">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </form>
+        </div>
+
+        <div class="payment-info">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="expiration">Expiration Date:</label>
+                <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </form>
+        </div>
+
+        <div class="checkout-actions">
+            <button class="checkout" onclick="placeOrder()">Place Order</button>
+            <a href="shopping_cart.html" class="continue-shopping">Back to Cart</a>
+            
+        </div>
+    </div>
+
+    <script>
+        // Retrieve cart total from localStorage
+        const cartTotal = localStorage.getItem('cartTotal');
+        const shipping = 10.00;
+
+        // Set subtotal and total in order summary
+        document.getElementById('subtotal').textContent = cartTotal ? (cartTotal - shipping).toFixed(2) : '0.00';
+        document.getElementById('total').textContent = cartTotal ? parseFloat(cartTotal).toFixed(2) : '10.00';
+
+        // Function to handle order placement
+        function placeOrder() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            if (!name || !email) {
+                alert('Please fill out your billing information.');
+                return;
+            }
+
+            alert('Order placed successfully!');
+            localStorage.removeItem('shoppingBasket'); // Clear basket
+            localStorage.removeItem('cartTotal'); // Clear total
+            window.location.href = 'index.html'; // Redirect to confirmation
+        }
+    </script>
+</body>
+</html>

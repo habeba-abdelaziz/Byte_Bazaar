@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Software</title>
+    <link rel="stylesheet" href="Application_software.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <h1>System Software</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="price">$299</span>
+            <div class="img">
+                <img src="./img/linux.png" alt="Linux">
+            </div>
+            <div class="description">
+                <h2>Linux</h2>
+                <p>A powerful, open-source operating system offering flexibility, security, and reliability, perfect for developers and tech enthusiasts.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Linux', 299, './img/linux.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$199</span>
+            <div class="img">
+                <img src="./img/windows 11.png" alt="Windows 11">
+            </div>
+            <div class="description">
+                <h2>Windows 11</h2>
+                <p>Simplify your workflow with Windows 11, featuring a modern design, enhanced multitasking tools, and improved security for personal and professional use.</p>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" onclick="addToBasket('Windows 11', 199, './img/windows 11.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$139</span>
+            <div class="img">
+                <img src="./img/windows 10.png" alt="Windows 10 Pro">
+            </div>
+            <div class="description">
+                <h2>Windows 10 Pro</h2>
+                <p>Boost your productivity with Windows 10 Pro, offering powerful features like advanced security, seamless multitasking, and robust management tools designed for both business and personal use.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Windows 10 Pro', 139, './img/windows 10.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$359</span>
+            <div class="img">
+                <img src="./img/mac os.png" alt="Mac OS X">
+            </div>
+            <div class="description">
+                <h2>Mac OS X</h2>
+                <p>An elegant and stable Unix-based operating system designed for seamless performance on Apple devices, ideal for creativity and productivity.</p>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" onclick="addToBasket('Mac OS X', 359, './img/mac os.png')">+ add to Cart</button>
+        </div>
+
+        <div class="link-buttons">
+            <a href="products.html" class="button">Back to product page</a>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    <a href="shopping_cart.html" class="cart-button">
+        <span class="icon">🛒</span>
+    </a>
+</body>
+</html>

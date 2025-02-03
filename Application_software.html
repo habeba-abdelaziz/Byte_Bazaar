@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Software</title>
+    <link rel="stylesheet" href="Application_software.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <h1>Application Software</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="price">$199</span>
+            <div class="img">
+                <img src="./img/office.png" alt="Microsoft Office 2023">
+            </div>
+            <div class="description">
+                <h2>Microsoft Office 2023</h2>
+                <p>From document creation to data analysis, to presentations and collaboration. Quickly adapts to how you write, organize, and share.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Microsoft Office 2023', 199, './img/office.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$399</span>
+            <div class="img">
+                <img src="./img/norton.png" alt="Norton 360 Antivirus">
+            </div>
+            <div class="description">
+                <h2>Norton 360 Antivirus</h2>
+                <p>From device protection to data privacy, to identity security. Quickly adapts to how you browse, work, and stay secure.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Norton 360 Antivirus', 399, './img/norton.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$139</span>
+            <div class="img">
+                <img src="./img/AutoCad.png" alt="Autodesk AutoCAD 2023">
+            </div>
+            <div class="description">
+                <h2>Autodesk AutoCAD 2023</h2>
+                <p>From 2D drafting to 3D modeling, to architectural design. Quickly adapts to how you plan, design, and build.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Autodesk AutoCAD 2023', 139, './img/AutoCad.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$159</span>
+            <div class="img">
+                <img src="./img/adobe.png" alt="Adobe Photoshop 2023">
+            </div>
+            <div class="description">
+                <h2>Adobe Photoshop 2023</h2>
+                <p>From photo editing to graphic design, to digital art creation. Quickly adapts to how you edit, create, and enhance.</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Adobe Photoshop 2023', 159, './img/adobe.png')">+ add to Cart</button>
+        </div>
+
+        <div class="link-buttons">
+            <a href="products.html" class="button">Back to product page</a>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    <a href="shopping_cart.html" class="cart-button">
+        <span class="icon">🛒</span>
+    </a>
+</body>
+</html>

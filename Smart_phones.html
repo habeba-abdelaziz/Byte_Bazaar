@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Phones</title>
+    <link rel="stylesheet" href="Smart_Phones.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <h1>Smart Phones</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span class="price">$3599</span>
+            <div class="img">
+                <img src="./img/Galaxy_S24_Ultra.png" alt="Samsung S23 Ultra">
+            </div>
+            <div class="description">
+                <h2>Samsung S23 Ultra</h2>
+                <p>12GB RAM, 256GB - Phantom Black</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('Samsung S23 Ultra', 3599, './img/Galaxy_S24_Ultra.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$2999</span>
+            <div class="img">
+                <img src="./img/iphone 15 pro.png" alt="iPhone 15 Pro">
+            </div>
+            <div class="description">
+                <h2>iPhone 15 Pro</h2>
+                <p>256GB ROM, 8GB RAM, OLED, 120Hz</p>
+            </div>
+            
+            <button class="add-to-cart" onclick="addToBasket('iPhone 15 Pro', 2999, './img/iphone 15 pro.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$1999</span>
+            <div class="img">
+                <img src="./img/iphone 13.png" alt="iPhone 13">
+            </div>
+            <div class="description">
+                <h2>iPhone 13</h2>
+                <p>128GB, 4GB RAM</p>
+            </div>
+            <button class="add-to-cart" onclick="addToBasket('iPhone 13', 1999, './img/iphone 13.png')">+ add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+            <span class="price">$1599</span>
+            <div class="img">
+                <img src="./img/Samsung_Galaxy_A55.png" alt="Samsung Galaxy A55">
+            </div>
+            <div class="description">
+                <h2>Samsung Galaxy A55</h2>
+                <p>8GB RAM, 128GB, 6.6 INCH</p>
+            </div>
+            
+            <button class="add-to-cart" onclick="addToBasket('Samsung Galaxy A55', 1599, './img/Samsung_Galaxy_A55.png')">+ add to Cart</button>
+        </div>
+
+        <div class="link-buttons">
+            <a href="products.html" class="button">Back to product page</a>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    <a href="shopping_cart.html" class="cart-button">
+        <span class="icon">🛒</span>
+    </a>
+</body>
+</html>

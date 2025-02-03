@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Byte Bazaar Logo">
+    </div>
+    <div class="cart-container">
+        <div class="shopping-basket">
+            <h1>Your Shopping Basket</h1>
+            <div class="basket-header">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Action</span>
+            </div>
+            <ul id="basket-items">
+            </ul>
+            <div class="basket-summary">
+                <p>Total Products: <span id="total-products">$0</span></p>
+                <p>Estimated Shipping Costs: <span id="shipping-cost">$10.00</span></p>
+                <p class="total-price">Total: <span id="total-price">$0</span></p>
+            </div>
+            <div class="basket-actions">
+                <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                <a href="checkout.html" class="checkout">Proceed to Checkout</a> 
+            </div>
+            
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <a href="index.html" class="mainpage-button">
+        <span class="icon">🏠</span>
+    </a>
+    
+</body>
+</html>

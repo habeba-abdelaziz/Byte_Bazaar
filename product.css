@@ -1,0 +1,194 @@
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.logo-container img {
+    width: 150px; 
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0e8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 35px;
+    padding: 30px;
+}
+
+.card {
+    width: 10rem;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(160, 72, 160);
+}
+
+/* Individual category colors */
+.personal-computers {
+    background-color: rgb(7, 11, 70);
+}
+
+.smart-phones {
+    background-color: rgb(7, 11, 70);
+}
+
+.hardware-accessories {
+    background-color: rgb(7, 11, 70);
+}
+
+.application-software {
+    background-color: rgb(7, 11, 70);
+}
+
+.system-software {
+    background-color: rgb(7, 11, 70);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 1.5;
+    
+}
+
+.cart-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Changed from 'right' to 'left' */
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+    
+}
+
+.cart-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.cart-button .icon {
+    font-size: 35px;
+}
+
+.mainpage-button {
+    position: fixed;
+    bottom: 122px; 
+    left: 20px;
+    background-color: rgb(7, 11, 70);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.3s;
+}
+
+.mainpage-button:hover {
+    background-color: rgb(160, 72, 160);
+}
+
+.mainpage-button .icon {
+    font-size: 35px;
+}
+/* تصميم مخصص للموبايل فقط */
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh; /* لجعل الصفحة تمتد بالكامل */
+        position: relative;
+    }
+
+    /* اللوجو في الزاوية اليمنى */
+    .logo-container img { 
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 90px;
+        height: auto;
+    }
+    
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* عمودين */
+        grid-template-rows:auto;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 10px;
+        gap: 35px; /* المسافة بين العناصر */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 140px; /* تقليل الحجم قليلاً */
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* البطاقة الخامسة في المنتصف وتأخذ عرض الصف بالكامل */
+    .card:nth-child(5) {
+        grid-column: span 2;
+        justify-self: center;
+        max-width: 250px;
+    }
+    .cart-button {
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+
+}
+    .mainpage-button {
+        position: absolute;
+        top: 25px;
+        left: 90px;
+        width: 40px;
+        height: 40px;
+
+}
+    
+
+}
+
